@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pz8", "pz8\pz8.csproj", "{8916D82B-D381-427D-A6CF-F11049ED9083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pz8Tests", "pz8Tests\pz8Tests.csproj", "{91A0FB60-C9CC-40EF-8721-F88477665B6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8916D82B-D381-427D-A6CF-F11049ED9083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8916D82B-D381-427D-A6CF-F11049ED9083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8916D82B-D381-427D-A6CF-F11049ED9083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8916D82B-D381-427D-A6CF-F11049ED9083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A0FB60-C9CC-40EF-8721-F88477665B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A0FB60-C9CC-40EF-8721-F88477665B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A0FB60-C9CC-40EF-8721-F88477665B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A0FB60-C9CC-40EF-8721-F88477665B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51C6D54E-3364-477A-9026-8318B1231B7F}
+	EndGlobalSection
+EndGlobal
