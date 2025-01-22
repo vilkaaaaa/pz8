@@ -14,7 +14,10 @@ namespace pz8
         public double Divide(double a, double b)
         {
             if (b == 0) throw new DivideByZeroException("Деление на 0 - ошибка");
+            Console.WriteLine("Деление на 0 - ошибка");
             return a/b;
         }
+        public double Sqrt(double a)=>Math.Sqrt(a);
+        public double Pow(double a, double b) => Math.Pow(a,b);
     }
 }

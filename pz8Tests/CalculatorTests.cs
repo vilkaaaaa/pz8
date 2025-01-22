@@ -5,11 +5,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace pz8.Tests
 {
     public class CalculatorTests
     {
+
+        [Fact()]
+        public void SqrtTest()
+        {
+            Calculator calculator = new Calculator();
+            double a = 25;
+            double res = 5;
+            double actualres = calculator.Sqrt(a);
+            Xunit.Assert.Equal(res, actualres);
+        }
+
+        [Fact()]
+        public void PowTest()
+        {
+            Calculator calculator = new Calculator();
+            double a = 6;
+            double b = 2;
+            double res = 36;
+            double actualres = calculator.Pow(a, b);
+            Xunit.Assert.Equal(res, actualres);
+        }
         [Fact()]
         public void AddTest()
         {
@@ -62,16 +84,11 @@ namespace pz8.Tests
             double actualres = calculator.Divide(a, b);
             Xunit.Assert.Equal(res, actualres);
         }
-        [Fact()]
-        public void DivideTest2() {
+        [Fact]
+        public void DivideByZero()
+        {
             Calculator calculator = new Calculator();
-            double a = 98;
-            double b = 0;
-            double actualres = calculator.Divide(a, b);
-            Xunit.Assert.Throws<DivideByZeroException>(() =>
-            {
-                double result = a / b;
-            });
+            Xunit.Assert.Throws<DivideByZeroException>(() => calculator.Divide(5,0));
         }
     }
 }
